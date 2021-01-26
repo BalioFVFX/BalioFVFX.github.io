@@ -1,0 +1,116 @@
+header {
+    display: flex;
+    padding: 1em;
+    color: black;
+}
+
+header ul {
+    font-size: 1.2em;
+    list-style: none;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin-left: 1em;
+}
+
+#favorites-link {
+    text-decoration: underline;
+}
+
+#favorites-list {
+    list-style: none;
+    width: 90%;
+    color: white;
+}
+
+.favorites-list-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.favorites-list-outer-container {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#favorites-list li {
+    display: flex;
+    justify-content: center;
+}
+
+#favorites-list li h2 {
+    font-size: 2em;
+    min-width: 8em;
+    text-align: center;
+}
+
+.heart-image {
+    width: 3em;
+    min-width: 20px;
+    align-self: center;
+    cursor: pointer;
+    margin-left: 0.2em;
+}
+
+.temperature {
+    display: inline-block;
+    font-size: 0.4em;
+    vertical-align: top;
+    position: relative;
+    top: -1em;
+}
+
+.favorite-location-weather-image {
+    width: 6em;
+    min-width: 6em;
+    margin-right: 0.2em;
+}
+
+.pagionation-image {
+    min-width: 50px;
+    width: 3%;
+    cursor: pointer;
+}
+
+#pagination-left {
+    margin-left: 1%;
+}
+
+#pagination-right {
+    margin-right: 1%;
+}
+
+#title {
+    color: white;
+    padding: 1em;
+}
+
+#empty-container {
+    display: none;
+}
+
+#empty-container img {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+header {
+    background: white;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+
+html {
+    min-height: 100%;
+    background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}

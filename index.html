@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="src/main.js"></script>
+    <title>Weather</title>
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <div class="header-brand">
+            <img src="img/logo.png" alt="Logo"/>
+        </div>
+
+        <nav>
+            <ul class="navigation-list">
+                <li id="home-link"><a href="index.html" target="_self">Home</a></li>
+                <li id="favorites-link"><a href="favorites.html" target="_self">Favorites</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="search-container">
+        <label>
+            <input type="search" placeholder="Sofia" class="search-bar" id="search-city-input"/>
+        </label>
+    </div>
+</header>
+<main>
+
+    <div class="error-container">
+        <p id="error">Error</p>
+    </div>
+
+    <div class="container-forecast-date-selection">
+        <button id="button-today" class="button-forecast-date-selection">Today</button>
+        <button id="button-tomorrow" class="button-forecast-date-selection">Tomorrow</button>
+        <button id="button-five-days" class="button-forecast-date-selection">5 Days</button>
+    </div>
+
+    <div class="main-content">
+        <section class="section-main-details">
+            <div class="container-forecast-location">
+                <div class="container-forecast-location-like">
+                    <h1 id="city-title">Sofia</h1>
+                    <img src="img/intertact/heart_off.svg" alt="Favorite state"
+                         id="add-remove-favourite-image"/>
+                </div>
+                <p id="timestamp"></p>
+            </div>
+        </section>
+        <section class="section-main-temperature">
+            <div class="container-temperature">
+                <h2 id="temperature-title">Loading...</h2>
+            </div>
+
+            <div class="container-temperature-visual">
+                <img src="#" alt="weather-visual" id="weather-image">
+                <p id="weather-description"></p>
+            </div>
+
+        </section>
+    </div>
+
+    <div class="container-forecast">
+        <div class="forecast-widget">
+            <p class="forecast-timestamp">09:00</p>
+            <img src="img/weather/day_partial_cloud.png" alt="forecast-visual" class="forecast-widget-image"/>
+            <p class="forecast-temperature">24&#176;</p>
+        </div>
+
+        <div class="forecast-widget">
+            <p class="forecast-timestamp">12:00</p>
+            <img src="img/weather/day_partial_cloud.png" alt="forecast-visual" class="forecast-widget-image"/>
+            <p class="forecast-temperature">24&#176;</p>
+        </div>
+
+        <div class="forecast-widget">
+            <p class="forecast-timestamp">Now</p>
+            <img src="img/weather/day_partial_cloud.png" alt="forecast-visual" class="forecast-widget-image"/>
+            <p class="forecast-temperature">24&#176;</p>
+        </div>
+
+        <div class="forecast-widget">
+            <p class="forecast-timestamp">18:00</p>
+            <img src="img/weather/day_partial_cloud.png" alt="forecast-visual" class="forecast-widget-image"/>
+            <p class="forecast-temperature">24&#176;</p>
+        </div>
+
+        <div class="forecast-widget">
+            <p class="forecast-timestamp">21:00</p>
+            <img src="img/weather/day_partial_cloud.png" alt="forecast-visual" class="forecast-widget-image"/>
+            <p class="forecast-temperature">24&#176;</p>
+        </div>
+    </div>
+
+    <div class="container-sunrise-sunset">
+        <div class="sunrise-sunset-content">
+            <h3 class="sunrise-sunset-title">Sunrise</h3>
+            <p id="sunrise-timestamp" class="sunrise-sunset-timestamp"></p>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="sunrise-sunset-content">
+            <h3 class="sunrise-sunset-title">Sunset</h3>
+            <p id="sunset-timestamp" class="sunrise-sunset-timestamp"></p>
+        </div>
+    </div>
+    <p id="credits">Data provided by OpenWeatherMapAPI</p>
+</main>
+
+<footer>
+</footer>
+
+</body>
+</html>
