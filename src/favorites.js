@@ -40,16 +40,15 @@ function updatePage(page) {
         return;
     }
 
-    let endIndex = (page * ITEMS_PER_PAGE) // 10
-    let startIndex = endIndex - ITEMS_PER_PAGE // 5
+    let endIndex = (page * ITEMS_PER_PAGE)
+    let startIndex = endIndex - ITEMS_PER_PAGE
 
     if(lastItem >= cities.length - 1 && page > currentPage && currentPage !== page){
-        console.log("GG")
         return;
     }
 
-    endIndex = Math.max(0, endIndex - 1) // 9
-    startIndex = Math.max(0, startIndex) // 4
+    endIndex = Math.max(0, endIndex - 1)
+    startIndex = Math.max(0, startIndex)
 
 
     if (startIndex >= cities.length) {
@@ -77,7 +76,7 @@ function updatePage(page) {
                 <img src="img/intertact/heart_on.svg" class="heart-image" alt="dislike"/>
             </li>`)
 
-        listItem.children(`img`).click(function (){
+        listItem.children(`.heart-image`).click(function (){
             let locationId = parseInt(listItem.children('h2').attr('id'))
             let location = {
                 "id": locationId
@@ -90,7 +89,6 @@ function updatePage(page) {
             })
 
             updatePage(currentPage)
-
         })
 
         $('#favorites-list').append(listItem)
@@ -124,8 +122,4 @@ function updateEmptyImageState() {
     } else {
         $('#empty-container').hide()
     }
-}
-
-function removeFromFavoritesById(id){
-
 }

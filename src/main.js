@@ -190,7 +190,6 @@ function getWeatherForFiveDays(lat, lon, callback) {
         url: `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${API_KEY}&exclude=minutely,hourly&units=metric`,
         type: "GET",
         success: function (response) {
-            console.log(response)
             let result = {
                 "measures": [
                     {
