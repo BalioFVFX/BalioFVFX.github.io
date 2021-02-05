@@ -241,7 +241,7 @@ main {
     text-align: center;
 }
 
-@media (max-device-width: 700px) {
+@media (max-width: 670px){
     header{
         flex-direction: column;
     }
