@@ -241,13 +241,23 @@ main {
     text-align: center;
 }
 
-@media (max-width: 670px){
+@media (max-width: 700px){
     header{
         flex-direction: column;
     }
 
     .nav-container{
         flex-direction: column;
+    }
+
+    .container-forecast-date-selection{
+        flex-direction: column;
+    }
+
+    .button-forecast-date-selection{
+        margin-top: 2em;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
     }
 
     .container-forecast {
@@ -257,17 +267,23 @@ main {
         margin-top: 3em;
     }
 
+
     .forecast-widget {
-        width: 50%;
+        width: 80%;
         flex-direction: row;
         margin-bottom: 2em;
         justify-content: space-around;
+    }
+
+    main{
+        padding: 0;
     }
 
     .main-content{
         flex-direction: column;
         width: 100%;
         justify-content: space-around;
+        margin-top: 2em;
     }
 
     .section-main-details{
@@ -299,7 +315,10 @@ main {
         width:10%;
     }
 
+
     .container-sunrise-sunset{
+        width: 70%;
+        min-width: 70%;
         margin: 0 auto;
     }
 
