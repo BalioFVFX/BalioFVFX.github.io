@@ -21,7 +21,8 @@ header ul li {
 
 #favorites-list {
     list-style: none;
-    width: 90%;
+    width: 100%;
+    padding: 0;
     color: white;
 }
 
