@@ -117,28 +117,28 @@ html {
 
 @media (max-width: 700px) {
 
-    header{
+    header {
         flex-direction: column;
         align-items: center;
     }
 
-    .favorite-location-weather-image{
+    .favorite-location-weather-image {
         min-width: 15%;
         max-width: 15%;
         object-fit: contain;
     }
 
-    .heart-image{
+    .heart-image {
         min-width: 10%;
         max-width: 10%;
     }
 
-    #favorites-list li h2{
+    #favorites-list li h2 {
         min-width: 65%;
         max-width: 65%;
     }
 
-    #empty-container img{
+    #empty-container img {
         width: 80%;
     }
 }

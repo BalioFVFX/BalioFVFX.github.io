@@ -36,14 +36,14 @@ function updatePage(page) {
 
     $('#empty-container').hide()
 
-    if(page <= 0){
+    if (page <= 0) {
         return;
     }
 
     let endIndex = (page * ITEMS_PER_PAGE)
     let startIndex = endIndex - ITEMS_PER_PAGE
 
-    if(lastItem >= cities.length - 1 && page > currentPage && currentPage !== page){
+    if (lastItem >= cities.length - 1 && page > currentPage && currentPage !== page) {
         return;
     }
 
@@ -76,7 +76,7 @@ function updatePage(page) {
                 <img src="img/intertact/heart_on.svg" class="heart-image" alt="dislike"/>
             </li>`)
 
-        listItem.children(`.heart-image`).click(function (){
+        listItem.children(`.heart-image`).click(function () {
             let locationId = parseInt(listItem.children('h2').attr('id'))
             let location = {
                 "id": locationId
