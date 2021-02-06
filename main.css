@@ -334,4 +334,8 @@ main {
     .forecast-widget-image{
         width:20%;
     }
+
+    .error-container {
+        width: 80%;
+    }
 }
